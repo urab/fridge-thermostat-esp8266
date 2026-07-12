@@ -1,13 +1,9 @@
 # fridge-thermostat-esp8266
-
 Smart refrigerator thermostat based on **Wemos D1 mini Pro**, **DS18B20**, **SSR**, **OLED**, **NeoPixel**, a local web interface, and optional **Home Assistant MQTT Discovery**.
-
 ![Finished refrigerator](fridge-front.jpg)
 
 ## Overview
-
 This project is a compact refrigerator / display-cooler controller built on ESP8266.
-
 It:
 
 - measures temperature with a **DS18B20**
@@ -18,7 +14,6 @@ It:
 - can connect to a normal Wi-Fi network and publish data to Home Assistant over MQTT
 
 The thermostat logic runs locally on the Wemos, so cooling control continues even when Wi-Fi, Home Assistant, or MQTT is unavailable.
-
 ## Features
 
 - Adjustable compressor ON and OFF temperature thresholds
@@ -54,8 +49,11 @@ The thermostat logic runs locally on the Wemos, so cooling control continues eve
 | **D6 / GPIO12** | OLED SDA |
 | **D7 / GPIO13** | OLED SCL |
 
-## Wiring notes
+## Wiring diagram
+![Fridge Thermostat Wiring Diagram](fridge-wiring-diagram.png)
+The diagram shows the actual wiring used in this project, including the Wemos D1 mini Pro, DS18B20 sensor, SSR control input, SSD1306 OLED, and 8-pixel NeoPixel strip.
 
+## Wiring notes
 ### DS18B20
 
 - VCC → 3.3 V
@@ -117,7 +115,7 @@ The web page allows you to:
 - change ON and OFF thresholds
 - force the compressor OFF
 - check Wi-Fi and MQTT state
-- 
+  
 ### Web interface screenshot
 
 ![Fridge Web Interface](fridge-web-interface.png)
@@ -262,7 +260,10 @@ Change `/dev/ttyUSB0` if the board appears on another serial port.
 - `fridge-thermostat-esp8266.ino`
 - `fridge-front.jpg`
 - `fridge-wiring.jpg`
+- `fridge-web-interface.png`
+- `fridge-wiring-diagram.png`
 - `README.md`
+- `LICENSE`
 
 ## Safety
 
@@ -284,4 +285,4 @@ Tested on a real mini-fridge and working successfully in everyday use.
 
 ## Author
 
-Created by **urab**.
+Created by **urab** with assistance from **ChatGPT by OpenAI**.

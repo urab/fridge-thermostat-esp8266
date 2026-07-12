@@ -117,6 +117,10 @@ The web page allows you to:
 - change ON and OFF thresholds
 - force the compressor OFF
 - check Wi-Fi and MQTT state
+- 
+### Web interface screenshot
+
+![Fridge Web Interface](fridge-web-interface.png)
 
 Change the default access-point password before using the controller in a public or shared location.
 
